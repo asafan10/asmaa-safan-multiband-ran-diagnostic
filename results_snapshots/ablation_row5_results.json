@@ -1,0 +1,389 @@
+{
+  "peak_load": 41,
+  "results": {
+    "A1+2 (score-trigger)": [
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 83.92444444444445,
+        "avg_throughput_mbps": 183.0369857294724,
+        "p5_throughput_mbps": 0.28339932629125725,
+        "load_std": 0.11790005370989798,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 624
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 78.58666666666667,
+        "avg_throughput_mbps": 186.82839566354625,
+        "p5_throughput_mbps": 0.325547126601815,
+        "load_std": 0.12943600416649612,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 536
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 79.20444444444445,
+        "avg_throughput_mbps": 218.5900656491375,
+        "p5_throughput_mbps": 0.27907669218182274,
+        "load_std": 0.09814237775836503,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 737
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 83.88000000000001,
+        "avg_throughput_mbps": 324.9516630934417,
+        "p5_throughput_mbps": 0.4447337840687455,
+        "load_std": 0.10230797171560632,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 541
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 81.7511111111111,
+        "avg_throughput_mbps": 230.6174209453797,
+        "p5_throughput_mbps": 0.3109802257817837,
+        "load_std": 0.08864880802133725,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 529
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 79.45333333333333,
+        "avg_throughput_mbps": 253.9746237918719,
+        "p5_throughput_mbps": 0.3765343274665801,
+        "load_std": 0.1168330661247558,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 692
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 84.75111111111111,
+        "avg_throughput_mbps": 253.20608825113217,
+        "p5_throughput_mbps": 0.4244621247487053,
+        "load_std": 0.1196249158030956,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 523
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 77.54666666666667,
+        "avg_throughput_mbps": 155.9116456091709,
+        "p5_throughput_mbps": 0.3058806293480641,
+        "load_std": 0.15992849119714148,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 489
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 86.30666666666667,
+        "avg_throughput_mbps": 235.61932099490076,
+        "p5_throughput_mbps": 0.6173572436268542,
+        "load_std": 0.11360441328818591,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 448
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 85.44,
+        "avg_throughput_mbps": 296.0835792200398,
+        "p5_throughput_mbps": 0.5060534345437787,
+        "load_std": 0.12117102900041445,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 508
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 82.95555555555555,
+        "avg_throughput_mbps": 282.53748355427285,
+        "p5_throughput_mbps": 0.30928966532810115,
+        "load_std": 0.103516726794948,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 550
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 84.77777777777777,
+        "avg_throughput_mbps": 243.2596354067056,
+        "p5_throughput_mbps": 0.4160697448227203,
+        "load_std": 0.10139772720659582,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 544
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 85.72,
+        "avg_throughput_mbps": 191.95178117550878,
+        "p5_throughput_mbps": 0.6418469682901415,
+        "load_std": 0.11681650921785677,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 600
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 86.98666666666666,
+        "avg_throughput_mbps": 360.44683396442616,
+        "p5_throughput_mbps": 1.1033217396506152,
+        "load_std": 0.11932148680858186,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 521
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 87.55555555555554,
+        "avg_throughput_mbps": 311.80182607538774,
+        "p5_throughput_mbps": 1.0688400715496285,
+        "load_std": 0.11167847561120584,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 539
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 85.23555555555555,
+        "avg_throughput_mbps": 225.97236967823113,
+        "p5_throughput_mbps": 0.4956764103053267,
+        "load_std": 0.12494167093363426,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 481
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 83.43111111111112,
+        "avg_throughput_mbps": 252.2728376513785,
+        "p5_throughput_mbps": 0.44656415860930765,
+        "load_std": 0.09917553894723492,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 585
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 88.83555555555557,
+        "avg_throughput_mbps": 338.8419117467865,
+        "p5_throughput_mbps": 1.641960570532192,
+        "load_std": 0.09657883267808032,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 475
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 76.33333333333333,
+        "avg_throughput_mbps": 345.562308039487,
+        "p5_throughput_mbps": 0.20793193895767245,
+        "load_std": 0.16818874475377524,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 512
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 81.62222222222222,
+        "avg_throughput_mbps": 289.4990228561297,
+        "p5_throughput_mbps": 0.43239553888967,
+        "load_std": 0.12389469769660157,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 624
+      }
+    ],
+    "A1+2+3 (score-trigger)": [
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 87.37777777777778,
+        "avg_throughput_mbps": 242.9855880843165,
+        "p5_throughput_mbps": 1.5957014222348462,
+        "load_std": 0.10837914559330906,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 733,
+        "proactive_handover_count": 243
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 80.90222222222222,
+        "avg_throughput_mbps": 316.35994497881586,
+        "p5_throughput_mbps": 0.480866205076332,
+        "load_std": 0.12960904880763915,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 698,
+        "proactive_handover_count": 216
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 80.78666666666666,
+        "avg_throughput_mbps": 240.87137075719627,
+        "p5_throughput_mbps": 0.33395518460831913,
+        "load_std": 0.1113060040097991,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 961,
+        "proactive_handover_count": 306
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 85.45777777777778,
+        "avg_throughput_mbps": 282.51405114263383,
+        "p5_throughput_mbps": 0.7590329328469999,
+        "load_std": 0.10724057649106174,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 767,
+        "proactive_handover_count": 242
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 85.78666666666666,
+        "avg_throughput_mbps": 195.93199562350765,
+        "p5_throughput_mbps": 0.8913812384515647,
+        "load_std": 0.0898196685549774,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 690,
+        "proactive_handover_count": 209
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 82.16444444444444,
+        "avg_throughput_mbps": 266.3267344161013,
+        "p5_throughput_mbps": 0.42494574591018663,
+        "load_std": 0.1128981372414553,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 856,
+        "proactive_handover_count": 275
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 86.06222222222222,
+        "avg_throughput_mbps": 250.98256056096784,
+        "p5_throughput_mbps": 1.7594002215022013,
+        "load_std": 0.13224605958312471,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 638,
+        "proactive_handover_count": 190
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 78.99111111111112,
+        "avg_throughput_mbps": 172.98499258565514,
+        "p5_throughput_mbps": 0.5755996531412216,
+        "load_std": 0.15779997184612427,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 717,
+        "proactive_handover_count": 230
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 87.03555555555556,
+        "avg_throughput_mbps": 403.695600166942,
+        "p5_throughput_mbps": 1.707630201332554,
+        "load_std": 0.11454802984357912,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 646,
+        "proactive_handover_count": 214
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 89.27555555555554,
+        "avg_throughput_mbps": 343.26245135192966,
+        "p5_throughput_mbps": 3.709964284359876,
+        "load_std": 0.12136059535956165,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 635,
+        "proactive_handover_count": 203
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 86.2088888888889,
+        "avg_throughput_mbps": 261.5100282024336,
+        "p5_throughput_mbps": 0.7876169460306445,
+        "load_std": 0.09987403216103359,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 758,
+        "proactive_handover_count": 237
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 88.52444444444444,
+        "avg_throughput_mbps": 435.2942046118026,
+        "p5_throughput_mbps": 1.6744762530977486,
+        "load_std": 0.10009616680261361,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 663,
+        "proactive_handover_count": 212
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 90.23111111111112,
+        "avg_throughput_mbps": 312.49582487869833,
+        "p5_throughput_mbps": 5.606253965726315,
+        "load_std": 0.1201085442542517,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 634,
+        "proactive_handover_count": 221
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 87.19555555555554,
+        "avg_throughput_mbps": 455.59933886283136,
+        "p5_throughput_mbps": 3.1765807519807145,
+        "load_std": 0.1344296021819747,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 645,
+        "proactive_handover_count": 202
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 88.73777777777778,
+        "avg_throughput_mbps": 323.8551472510739,
+        "p5_throughput_mbps": 1.3732152730446958,
+        "load_std": 0.11213307333209438,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 630,
+        "proactive_handover_count": 206
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 85.97777777777777,
+        "avg_throughput_mbps": 284.9629027446886,
+        "p5_throughput_mbps": 0.8282317586540804,
+        "load_std": 0.1250152572955497,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 631,
+        "proactive_handover_count": 203
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 84.90222222222222,
+        "avg_throughput_mbps": 330.73298471964523,
+        "p5_throughput_mbps": 0.4989423356727062,
+        "load_std": 0.1098095484664968,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 873,
+        "proactive_handover_count": 295
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 89.89333333333333,
+        "avg_throughput_mbps": 268.5402433505728,
+        "p5_throughput_mbps": 4.1425826042564555,
+        "load_std": 0.10278548643874819,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 616,
+        "proactive_handover_count": 196
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 81.01333333333334,
+        "avg_throughput_mbps": 346.0644956037891,
+        "p5_throughput_mbps": 0.44290731874775946,
+        "load_std": 0.15579348943392127,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 689,
+        "proactive_handover_count": 233
+      },
+      {
+        "coverage_pct": 100.0,
+        "qos_coverage_pct": 84.45333333333333,
+        "avg_throughput_mbps": 304.50097670275767,
+        "p5_throughput_mbps": 0.7112109362615893,
+        "load_std": 0.12612453261124007,
+        "capacity_violation_pct": 0.0,
+        "handover_count": 730,
+        "proactive_handover_count": 247
+      }
+    ]
+  }
+}

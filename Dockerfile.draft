@@ -1,0 +1,26 @@
+# NOT VALIDATED END-TO-END. This is a starting-point sketch only, written
+# from the pinned versions in requirements.txt and README.md, but it has
+# not been built or smoke-tested in this environment (no Docker daemon
+# available in the sandbox that produced this paper's results). Do not
+# treat this file as the reproducibility artifact -- reproduce.sh, run
+# directly against the pinned requirements.txt, is. A validated Dockerfile
+# is tracked as explicit future work in the paper's Data and Code
+# Availability section.
+#
+# If you build and validate this, please report back so it can be
+# promoted out of draft status.
+
+FROM python:3.11.15-slim
+
+WORKDIR /repro
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+# Deliberately does NOT install torch: the results path is pure NumPy
+# (see README.md, "Compute backend"). Installing torch here would silently
+# change which code path every DQN-based table/figure exercises.
+
+CMD ["./reproduce.sh"]

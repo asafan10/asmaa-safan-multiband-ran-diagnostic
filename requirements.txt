@@ -1,0 +1,10 @@
+# NumPy-only backend. Installed with:
+#   python3 -m pip install -r requirements.txt --break-system-packages
+#
+# This environment reproduces the non-DQN modules and the NumPy-fallback
+# DQN path. Every DQN result actually reported in the current paper
+# (Table VI, Table VII, Section V-G's closed-loop substitution/K=150
+# retrain, and Appendix E) was produced with the PyTorch backend
+# instead — see requirements-torch.txt for that environment.
+numpy==2.4.4
+scipy==1.17.1
