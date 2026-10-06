@@ -63,3 +63,11 @@ reproducible. Table VII row 4 is therefore pinned to one thread; Table VI delibe
 ## 7. Dockerfile
 
 `Dockerfile.draft` has not been built or tested. `reproduce.sh` against the pinned requirements is the supported route.
+
+## 8. What this package reproduces and what it does not
+
+- It reproduces the tables and statistics listed in the manifest of Section 3, including all Section V statistics (`reproduce.sh`; `reproduce.sh --full` also regenerates the DQN-based and recovered-script results and verifies them against per-seed reference values). Tables A1, A6.a, A6.b, A7 and A8 have no script here and are listed in `VERIFICATION_REPORT.md`.
+- It includes the four evaluation-artifact checks of Section V-J.
+- It does **not** include a DQN retrained with a rescaled reward. The reported DQN result is for a policy trained at K = 10 and transferred unchanged to K = 150, plus the K = 150 retraining of Table A5. The reward-scale confound (C_ref = 10,000 Mbps) is described in the paper.
+- It does **not** include a comparison against a published state-of-the-art scheme. All comparisons are against internal baselines, as stated in limitation 8 of the paper.
+
