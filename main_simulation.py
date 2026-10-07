@@ -1,7 +1,7 @@
 """
 =============================================================================
   MAIN — Full Integration Demo
-  Runs all four proposed modules end-to-end, plus the BL-1 / BL-3
+  Runs all four proposed modules end-to-end, plus the BL-1 / Reactive-HO baseline
   baselines from Section IV, in one coherent simulation scenario.
 =============================================================================
 
@@ -73,7 +73,7 @@ def run_demo():
         band, ho_event = selector.select_band(ctx, time_ms=100.0)
         selector.print_decision(ctx, band, ho_event)
 
-    # ── Step 3: Predictive handoff (proposed) vs. reactive-only (BL-3) ────────
+    # ── Step 3: Predictive handoff (proposed) vs. reactive-only (Reactive-HO baseline) ────────
     print("\n[3/5] Predictive Handoff with Blockage Detection vs. Reactive Baseline ...")
     engine   = PredictiveHandoffEngine(planner.base_stations)
     reactive = ReactiveHandoffEngine(planner.base_stations)
@@ -102,7 +102,7 @@ def run_demo():
                 reactive_ho_count += 1
 
     print(f"\n  Total proactive HOs triggered (proposed) : {predictive_ho_count}")
-    print(f"  Total reactive HOs triggered  (BL-3)     : {reactive_ho_count}")
+    print(f"  Total reactive HOs triggered  (Reactive-HO baseline)     : {reactive_ho_count}")
     engine.summary()
     reactive.summary()
 

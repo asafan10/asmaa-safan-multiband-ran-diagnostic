@@ -7,7 +7,7 @@ Features:
   • SNR time-series forecasting (Holt's double-exponential smoothing)
   • Dynamic blockage detection (rapid SNR-drop detector)
   • Proactive handoff: triggers HO before blockage causes outage
-  • ReactiveHandoffEngine — the non-predictive baseline (BL-3) that
+  • ReactiveHandoffEngine — the non-predictive baseline (Reactive-HO baseline) that
     Module 3 is benchmarked against in Section IV
 =============================================================================
 
@@ -407,7 +407,7 @@ class PredictiveHandoffEngine:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 3.5  Baseline BL-3 — reactive-only handoff engine
+# 3.5  Reactive-handoff baseline (not a numbered paper baseline) — reactive-only handoff engine
 # ─────────────────────────────────────────────────────────────────────────────
 
 @dataclass
@@ -421,14 +421,14 @@ class ReactiveHandoffDecision:
 
 class ReactiveHandoffEngine:
     """
-    Baseline (BL-3): non-predictive, threshold-crossing handoff.
+    Baseline (Reactive-HO baseline): non-predictive, threshold-crossing handoff.
 
     No Kalman trajectory prediction, no SNR forecasting, no blockage
     geometry lookahead — this engine only reacts AFTER the serving
     band's *measured* SNR has already dropped below `SNR_OUTAGE_DB`,
     which is exactly the failure mode PredictiveHandoffEngine is
     designed to avoid. Used to reproduce the paper's reported handover
-    rate / ping-pong rate comparison against BL-3 (Section IV).
+    rate / ping-pong rate comparison against Reactive-HO baseline (Section IV).
 
     Shares SNR_OUTAGE_DB and COOLDOWN_TICKS with PredictiveHandoffEngine
     so the only difference between the two engines is proactive vs.
@@ -490,7 +490,7 @@ class ReactiveHandoffEngine:
 
     def summary(self):
         print("\n" + "=" * 60)
-        print("  REACTIVE HANDOFF ENGINE (BL-3) — SUMMARY")
+        print("  REACTIVE HANDOFF ENGINE (Reactive-HO baseline) — SUMMARY")
         print("=" * 60)
         print(f"  Total HO decisions : {len(self.handoff_log)}")
         if self.handoff_log:

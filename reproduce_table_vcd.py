@@ -1,5 +1,5 @@
 """
-Tables V.c / V.d: Module 1 vs. BL-1 (Max-SNR) and BL-4 (Load-Aware SNR) under the 150-tick mobility protocol.
+Tables V.c / V.d: Module 1 vs. BL-1 (Max-SNR) and BL-3 (Load-Aware SNR) under the 150-tick mobility protocol.
 
 Protocol (identical for the three methods):
   * K=150 population and topology of the closed-loop ablation (ablation_experiment._build_population, 20 seeds).
@@ -42,10 +42,10 @@ def baseline(seed, cls):
 def main():
     res = {"A1": [ab.run_config_A1(s) for s in ab.SEEDS],
            "BL-1": [baseline(s, MaxSNRPlanner) for s in ab.SEEDS],
-           "BL-4": [baseline(s, LoadAwareSNRPlanner) for s in ab.SEEDS]}
+           "BL-3": [baseline(s, LoadAwareSNRPlanner) for s in ab.SEEDS]}
     json.dump(res, open("table_vcd_results.json", "w"), indent=1)
     a = 0.05 / 6
-    for name in ("BL-1", "BL-4"):
+    for name in ("BL-1", "BL-3"):
         print(f"\nModule 1 (A1) vs {name}")
         for k, lab in METRICS:
             x = np.array([r[k] for r in res["A1"]]); y = np.array([r[k] for r in res[name]]); d = x - y

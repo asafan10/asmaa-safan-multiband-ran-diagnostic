@@ -545,12 +545,12 @@ class MaxSNRPlanner:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 1.6  Baseline BL-4 — load-aware association (no eligibility gating)
+# 1.6  Baseline BL-3 — load-aware association (no eligibility gating)
 # ─────────────────────────────────────────────────────────────────────────────
 
 class LoadAwareSNRPlanner:
     """
-    Baseline (BL-4): load-aware association, requested directly by a
+    Baseline (BL-3): load-aware association, requested directly by a
     technical review as the fairest comparison point for Module 1 that
     was previously missing — BL-1 (Max-SNR) ignores load entirely, so a
     review can reasonably ask whether Module 1's advantage over BL-1 is
@@ -612,7 +612,7 @@ class LoadAwareSNRPlanner:
     def network_kpis(self) -> Dict:
         return compute_network_kpis(self.ues, self.base_stations)
 
-    def print_report(self, title: str = "LOAD-AWARE SNR BASELINE (BL-4) — KPI REPORT"):
+    def print_report(self, title: str = "LOAD-AWARE SNR BASELINE (BL-3) — KPI REPORT"):
         print_kpi_report(self.network_kpis(), title)
 
 

@@ -7,7 +7,7 @@ Environment: 2-core CPU container, Python 3.11, numpy 2.4.4, scipy 1.17.1, torch
 | Paper item | Script | Result of this re-run |
 |---|---|---|
 | Tables V.a, V.b | `reproduce_table_v.py` | **Identical** to the printed table values (all means, SDs, t, p, Wilcoxon p, d). |
-| Tables V.c, V.d | `reproduce_table_vcd.py` (new) | **Identical** to the revised tables and to the golden JSON (380 numbers). The old BL-1/BL-4 rows could not be regenerated (script lost) and were replaced. |
+| Tables V.c, V.d | `reproduce_table_vcd.py` (new) | **Identical** to the revised tables and to the golden JSON (380 numbers). The old BL-1/BL-3 rows could not be regenerated (script lost) and were replaced. |
 | 890 → 355 Mbps decomposition | `decomposition_check.py` (new) | 355.05 / 474.28 / 355.85 Mbps; matches the text; golden JSON identical (60 numbers). |
 | Per-cell load analysis, Fig. 3 | `load_distribution_analysis.py` | 85.4 % vs 48.7 % zero-load cells, peak 0.43 vs 0.80, 1 of 520 cells ≥ 0.8; golden identical (1095 numbers). |
 | Table VI | `reproduce_table_vi.py` | **Identical** to the paper for all three training seeds (DQN 1857.43 / 1645.46 / 1767.84 Mbps; heuristics, t, p, d for seed 42). *Found and fixed:* `compare_dqn_vs_heuristics` defaulted to 12 evaluation episodes in this package version; the paper uses 20 (seeds 9000–9019). Default is now 20, snapshot regenerated. Thread-count dependence (README §6) still applies. |
@@ -27,3 +27,6 @@ Environment: 2-core CPU container, Python 3.11, numpy 2.4.4, scipy 1.17.1, torch
 ## Not covered by any script in this package
 
 Table A1 (band distribution by velocity), Tables A6.a and A6.b (sensitivity sweeps), Tables A7 and A8 (within-tick-cache comparisons), Fig. 2 (K = 50 illustration), Fig. 4 and Fig. 6 plots, the 8–11 dB / 33–79 dB link-budget statements, and the per-seed ranges quoted for Table V.c/V.d beyond what `reproduce_table_vcd.py` prints. They are as reported in the manuscript and were checked only for internal consistency (text against tables).
+
+## Label update (final revision)
+The load-aware association baseline, previously labelled "BL-4" in code, printed reports and the golden JSON, is now labelled **BL-3**, matching the paper (Section III-C5, Eq. (17)). The reactive-handoff engine that was previously labelled "BL-3" in `predictive_handoff.py` / `main_simulation.py` is now called the "Reactive-HO baseline"; it is not a numbered baseline in the paper. Only labels and variable names changed; the Table V.a/V.b and V.c/V.d scripts were re-run after the rename and give the same results (e.g., per-seed QoS gap min 30.5 / mean 41.8 pp).

@@ -70,4 +70,3 @@ reproducible. Table VII row 4 is therefore pinned to one thread; Table VI delibe
 - It includes the four evaluation-artifact checks of Section V-J.
 - It does **not** include a DQN retrained with a rescaled reward. The reported DQN result is for a policy trained at K = 10 and transferred unchanged to K = 150, plus the K = 150 retraining of Table A5. The reward-scale confound (C_ref = 10,000 Mbps) is described in the paper.
 - It does **not** include a comparison against a published state-of-the-art scheme. All comparisons are against internal baselines, as stated in limitation 8 of the paper.
-

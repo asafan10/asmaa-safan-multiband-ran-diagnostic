@@ -94,7 +94,7 @@ COMPARISON_N_UES = 150
 
 
 def _run_one_seed(seed: int, n_ues: int = COMPARISON_N_UES) -> Dict[str, Dict[str, float]]:
-    """Run the proposed planner, BL-1, and BL-4 on identical topology/UEs for one seed."""
+    """Run the proposed planner, BL-1, and BL-3 on identical topology/UEs for one seed."""
     base_stations, ues = build_scenario(seed=seed, n_ues=n_ues)
 
     proposed = HierarchicalMultiBandPlanner()
@@ -110,17 +110,17 @@ def _run_one_seed(seed: int, n_ues: int = COMPARISON_N_UES) -> Dict[str, Dict[st
     bl1.run_planning()
     bl1_kpis = bl1.network_kpis()
 
-    # BL-4: load-aware association, requested directly by a technical review
+    # BL-3: load-aware association, requested directly by a technical review
     # as the fairest missing baseline for Module 1 -- isolates whether
     # Module 1's advantage over BL-1 is really about load-awareness
     # specifically, or about eligibility gating / band-priority ordering too.
-    bl4_bss, bl4_ues = clone_topology(base_stations, ues)
-    bl4 = LoadAwareSNRPlanner(bl4_bss)
-    bl4.ues = bl4_ues
-    bl4.run_planning()
-    bl4_kpis = bl4.network_kpis()
+    bl3_bss, bl3_ues = clone_topology(base_stations, ues)
+    bl3 = LoadAwareSNRPlanner(bl3_bss)
+    bl3.ues = bl3_ues
+    bl3.run_planning()
+    bl3_kpis = bl3.network_kpis()
 
-    return {"proposed": proposed_kpis, "bl1": bl1_kpis, "bl4": bl4_kpis}
+    return {"proposed": proposed_kpis, "bl1": bl1_kpis, "bl3": bl3_kpis}
 
 
 def compare_planners(seeds: List[int] = SEEDS, alpha: float = 0.05,
@@ -128,12 +128,12 @@ def compare_planners(seeds: List[int] = SEEDS, alpha: float = 0.05,
     """
     Runs `seeds` independent (topology + UE population) trials of the
     proposed planner vs. MaxSNRPlanner (BL-1) and LoadAwareSNRPlanner
-    (BL-4), then reports a SEPARATE paired t-test per metric per baseline
+    (BL-3), then reports a SEPARATE paired t-test per metric per baseline
     with Bonferroni-corrected significance (correction now spans both
     baselines x all metrics, not metrics alone).
     """
     print("\n" + "=" * 72)
-    print("  MULTI-SEED PLANNER COMPARISON: Proposed vs. Max-SNR (BL-1) vs. Load-Aware SNR (BL-4)")
+    print("  MULTI-SEED PLANNER COMPARISON: Proposed vs. Max-SNR (BL-1) vs. Load-Aware SNR (BL-3)")
     print(f"  seeds = {seeds}")
     print("=" * 72)
 
@@ -143,7 +143,7 @@ def compare_planners(seeds: List[int] = SEEDS, alpha: float = 0.05,
     alpha_corrected = alpha / (n_metrics * n_baselines)
 
     results = {}
-    for baseline_key, baseline_label in [("bl1", "BL-1 (Max-SNR)"), ("bl4", "BL-4 (Load-Aware SNR)")]:
+    for baseline_key, baseline_label in [("bl1", "BL-1 (Max-SNR)"), ("bl3", "BL-3 (Load-Aware SNR)")]:
         print(f"\n  --- Proposed vs. {baseline_label} ---")
         print(f"  {'Metric':<28}{'Proposed (mean±std)':<24}{baseline_label + ' (mean±std)':<26}"
               f"{'t':>8}{'p':>12}{'Wilcoxon p':>12}{'d':>8}  sig(Bonf.)")

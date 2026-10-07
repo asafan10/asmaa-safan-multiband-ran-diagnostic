@@ -1,6 +1,6 @@
 """
 One-command reproduction of Table V.a/b (Module 1 vs. BL-1 Max-SNR and
-BL-4 Load-Aware SNR, K=150, 20 seeds).
+BL-3 Load-Aware SNR, K=150, 20 seeds).
 
 Chosen over Table IX for `reproduce.sh` because it runs in well under a
 second on ordinary hardware (no DQN training involved), so a reader gets
